@@ -430,36 +430,6 @@ npm start
 - ✅ HTTPS deployment
 - ✅ Environment variable protection
 
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
-
-### Development Setup
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests
-5. Submit a pull request
-
-### Code Style
-
-- Follow Move best practices for smart contracts
-- Use TypeScript for frontend development
-- Follow Tailwind CSS conventions
-- Write comprehensive tests
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- [Aptos Labs](https://aptoslabs.com/) for the blockchain infrastructure
-- [Move Language](https://move-language.github.io/move/) for smart contract development
-- [Next.js](https://nextjs.org/) for the frontend framework
-- [Tailwind CSS](https://tailwindcss.com/) for styling
-
 ## 🔗 Links
 
 - **Live Demo**: [https://teacher-portfolio-dapp.vercel.app](https://teacher-portfolio-dapp.vercel.app)
@@ -468,31 +438,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 <img width="1811" height="870" alt="image" src="https://github.com/user-attachments/assets/41311aa3-79fb-4d4e-9583-51aaca094931" />
 
 - **Portfolio Update Proof**: [View Update Transaction](https://explorer.aptoslabs.com/txn/0xcdb67b08e598da74e14209818997d5f7d7baabb9cea774e8f46bf85a1dec8117?network=devnet)
-- **Documentation**: [Project Wiki](https://github.com/yourusername/Teacher-Portfolio-DApp/wiki)
-
-## 📞 Support
-
-- **Discord**: [Join our community](https://discord.gg/aptos)
-- **Issues**: [GitHub Issues](https://github.com/yourusername/Teacher-Portfolio-DApp/issues)
-- **Email**: support@teacherportfolio.com
 
 ## 🎯 ISTE x Build on Aptos Bootcamp
 
 This project was developed as part of the **ISTE x Build on Aptos Bootcamp** - a hands-on Web3 development program focused on building decentralized applications in the Aptos ecosystem.
-
-### 🚀 Event Details
-
-**ISTE x Build on Aptos Bootcamp**
-- 📅 **Date**: 15th - 16th September, 2025
-- 📍 **Venue**: SRM-IST, Delhi NCR Campus (Ghaziabad)
-- 🌐 **Website**: [istesrmncr.in](https://istesrmncr.in)
-
-### ✨ What the Bootcamp Offered
-
-- ⚡ Hands-on training to build dApps in the Aptos ecosystem
-- ⚡ Expert mentors, real projects, fullstack skills
-- ⚡ Cool goodies, refreshments & certificates 🏅
-- ⚡ Win $25 for a fullstack project 💰
 
 ### 👨‍💻 Developer Information
 
@@ -500,12 +449,6 @@ This project was developed as part of the **ISTE x Build on Aptos Bootcamp** - a
 **Registration No**: RA2311026030176  
 **Program**: B.Tech CSE - AIML, 5th Semester  
 **Institution**: SRM Institute of Science and Technology
-
-### 📞 Event Contacts
-
-For bootcamp queries:
-- **Akash Deep**: 8826036898
-- **Sneha Tripathy**: 9348590847
 
 ---
 
