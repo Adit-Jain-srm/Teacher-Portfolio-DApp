@@ -465,6 +465,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Live Demo**: [https://teacher-portfolio-dapp.vercel.app](https://teacher-portfolio-dapp.vercel.app)
 - **Aptos Explorer**: [View Contract](https://explorer.aptoslabs.com/account/0x11f5ce7a69fcf922bb570a4c9ff0d7bb8c604cbadf1cb5385dc35cd98c814d00?network=devnet)
 - **Deployment Transaction**: [View Transaction](https://explorer.aptoslabs.com/txn/164317995?network=devnet)
+<img width="1811" height="870" alt="image" src="https://github.com/user-attachments/assets/41311aa3-79fb-4d4e-9583-51aaca094931" />
+
 - **Portfolio Update Proof**: [View Update Transaction](https://explorer.aptoslabs.com/txn/0xcdb67b08e598da74e14209818997d5f7d7baabb9cea774e8f46bf85a1dec8117?network=devnet)
 - **Documentation**: [Project Wiki](https://github.com/yourusername/Teacher-Portfolio-DApp/wiki)
 
