@@ -6,7 +6,7 @@
 set -e
 
 NETWORK=${1:-devnet}
-CONTRACT_ADDRESS="0x174f07bcfca5b3b406fe11a48b8b20832809fcf60337c1fd7de80344bc6e8cdd"
+CONTRACT_ADDRESS="0x11f5ce7a69fcf922bb570a4c9ff0d7bb8c604cbadf1cb5385dc35cd98c814d00"
 
 echo "🚀 Deploying Teacher Portfolio DApp to $NETWORK..."
 

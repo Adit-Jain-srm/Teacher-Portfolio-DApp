@@ -26,7 +26,7 @@ The Teacher Portfolio DApp revolutionizes how educators showcase their professio
 
 ### Smart Contract (Move)
 - **Module**: `MyModule::teacher_portfolio`
-- **Address**: `0x174f07bcfca5b3b406fe11a48b8b20832809fcf60337c1fd7de80344bc6e8cdd`
+- **Address**: `0x11f5ce7a69fcf922bb570a4c9ff0d7bb8c604cbadf1cb5385dc35cd98c814d00`
 - **Network**: Aptos Devnet/Testnet/Mainnet
 
 ### Frontend (Next.js)
@@ -113,7 +113,7 @@ Create a `.env.local` file in the `frontend` directory:
 
 ```env
 NEXT_PUBLIC_APTOS_NETWORK=devnet
-NEXT_PUBLIC_CONTRACT_ADDRESS=0x174f07bcfca5b3b406fe11a48b8b20832809fcf60337c1fd7de80344bc6e8cdd
+NEXT_PUBLIC_CONTRACT_ADDRESS=0x11f5ce7a69fcf922bb570a4c9ff0d7bb8c604cbadf1cb5385dc35cd98c814d00
 NEXT_PUBLIC_DAPP_NAME=Teacher Portfolio DApp
 ```
 
@@ -204,19 +204,19 @@ public entry fun verify_portfolio(
 ```bash
 # Create a new portfolio
 aptos move run \
-  --function-id 0x174f07bcfca5b3b406fe11a48b8b20832809fcf60337c1fd7de80344bc6e8cdd::teacher_portfolio::mint_portfolio_nft \
+  --function-id 0x11f5ce7a69fcf922bb570a4c9ff0d7bb8c604cbadf1cb5385dc35cd98c814d00::teacher_portfolio::mint_portfolio_nft \
   --args string:"John Smith" string:"Mathematics" u64:150 u64:5 bool:false string:"ipfs://QmYourMetadataHash" \
   --network devnet
 
 # Update teaching stats
 aptos move run \
-  --function-id 0x174f07bcfca5b3b406fe11a48b8b20832809fcf60337c1fd7de80344bc6e8cdd::teacher_portfolio::update_impact_stats \
+  --function-id 0x11f5ce7a69fcf922bb570a4c9ff0d7bb8c604cbadf1cb5385dc35cd98c814d00::teacher_portfolio::update_impact_stats \
   --args u64:25 u64:1 \
   --network devnet
 
 # Verify portfolio
 aptos move run \
-  --function-id 0x174f07bcfca5b3b406fe11a48b8b20832809fcf60337c1fd7de80344bc6e8cdd::teacher_portfolio::verify_portfolio \
+  --function-id 0x11f5ce7a69fcf922bb570a4c9ff0d7bb8c604cbadf1cb5385dc35cd98c814d00::teacher_portfolio::verify_portfolio \
   --network devnet
 ```
 
@@ -407,7 +407,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🔗 Links
 
 - **Live Demo**: [https://teacher-portfolio-dapp.vercel.app](https://teacher-portfolio-dapp.vercel.app)
-- **Aptos Explorer**: [View Contract](https://explorer.aptoslabs.com/account/0x174f07bcfca5b3b406fe11a48b8b20832809fcf60337c1fd7de80344bc6e8cdd)
+- **Aptos Explorer**: [View Contract](https://explorer.aptoslabs.com/account/0x11f5ce7a69fcf922bb570a4c9ff0d7bb8c604cbadf1cb5385dc35cd98c814d00?network=devnet)
+- **Deployment Transaction**: [View Transaction](https://explorer.aptoslabs.com/txn/164317995?network=devnet)
 - **Documentation**: [Project Wiki](https://github.com/yourusername/Teacher-Portfolio-DApp/wiki)
 
 ## 📞 Support

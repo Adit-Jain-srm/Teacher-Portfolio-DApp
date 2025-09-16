@@ -5,18 +5,25 @@ const config = new AptosConfig({ network: Network.DEVNET })
 const aptos = new Aptos(config)
 
 // Contract configuration
-export const CONTRACT_ADDRESS = '0x174f07bcfca5b3b406fe11a48b8b20832809fcf60337c1fd7de80344bc6e8cdd'
+export const CONTRACT_ADDRESS = '0x11f5ce7a69fcf922bb570a4c9ff0d7bb8c604cbadf1cb5385dc35cd98c814d00'
 export const MODULE_NAME = 'teacher_portfolio'
 
-// IPFS configuration (you can use Pinata, web3.storage, or any IPFS service)
-const PINATA_API_KEY = process.env.NEXT_PUBLIC_PINATA_API_KEY || 'your-pinata-api-key'
-const PINATA_SECRET_KEY = process.env.NEXT_PUBLIC_PINATA_SECRET_KEY || 'your-pinata-secret-key'
+// IPFS configuration using Pinata
+const PINATA_API_KEY = process.env.NEXT_PUBLIC_PINATA_API_KEY
+const PINATA_SECRET_KEY = process.env.NEXT_PUBLIC_PINATA_SECRET_KEY
+const PINATA_JWT = process.env.NEXT_PUBLIC_PINATA_JWT
 
 /**
  * Upload data to IPFS using Pinata
+ * Supports both API Key/Secret and JWT authentication
  */
 export async function uploadToIPFS(data: string | File, contentType?: string): Promise<string> {
   try {
+    // Check if we have the required credentials
+    if (!PINATA_JWT && (!PINATA_API_KEY || !PINATA_SECRET_KEY)) {
+      throw new Error('Pinata credentials not configured. Please set PINATA_JWT or PINATA_API_KEY/PINATA_SECRET_KEY in your environment variables.')
+    }
+
     const formData = new FormData()
     
     if (typeof data === 'string') {
@@ -28,25 +35,36 @@ export async function uploadToIPFS(data: string | File, contentType?: string): P
       formData.append('file', data)
     }
 
+    // Prepare headers based on available authentication method
+    const headers: Record<string, string> = {}
+    
+    if (PINATA_JWT) {
+      // Use JWT authentication (recommended)
+      headers['Authorization'] = `Bearer ${PINATA_JWT}`
+    } else {
+      // Use API Key/Secret authentication
+      headers['pinata_api_key'] = PINATA_API_KEY!
+      headers['pinata_secret_api_key'] = PINATA_SECRET_KEY!
+    }
+
     const response = await fetch('https://api.pinata.cloud/pinning/pinFileToIPFS', {
       method: 'POST',
-      headers: {
-        'pinata_api_key': PINATA_API_KEY,
-        'pinata_secret_api_key': PINATA_SECRET_KEY,
-      },
+      headers,
       body: formData,
     })
 
     if (!response.ok) {
-      throw new Error('Failed to upload to IPFS')
+      const errorText = await response.text()
+      throw new Error(`Failed to upload to IPFS: ${response.status} ${errorText}`)
     }
 
     const result = await response.json()
+    console.log('Successfully uploaded to IPFS:', result.IpfsHash)
     return `ipfs://${result.IpfsHash}`
+    
   } catch (error) {
     console.error('IPFS upload error:', error)
-    // Fallback: return a placeholder IPFS URI for demo purposes
-    return 'ipfs://QmYourHashHere'
+    throw new Error(`IPFS upload failed: ${error instanceof Error ? error.message : 'Unknown error'}`)
   }
 }
 
