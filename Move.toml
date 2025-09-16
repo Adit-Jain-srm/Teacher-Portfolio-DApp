@@ -1,0 +1,16 @@
+[package]
+name = "Teacher-Portfolio-DApp"
+version = "1.0.0"
+authors = []
+
+[addresses]
+MyModule = "0x174f07bcfca5b3b406fe11a48b8b20832809fcf60337c1fd7de80344bc6e8cdd"
+
+[dev-addresses]
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-framework.git"
+rev = "mainnet"
+subdir = "aptos-framework"
+
+[dev-dependencies]
