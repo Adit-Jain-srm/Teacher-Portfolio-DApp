@@ -1,0 +1,42 @@
+{
+  "name": "John Smith",
+  "description": "Teaching Portfolio for John Smith - Mathematics Teacher with 5 years of experience",
+  "image": "ipfs://QmYourImageHashHere",
+  "attributes": [
+    {
+      "trait_type": "Subject",
+      "value": "Mathematics"
+    },
+    {
+      "trait_type": "Students Taught",
+      "value": 150
+    },
+    {
+      "trait_type": "Years Experience", 
+      "value": 5
+    },
+    {
+      "trait_type": "Impact Score",
+      "value": 750
+    },
+    {
+      "trait_type": "Verified",
+      "value": false
+    }
+  ],
+  "properties": {
+    "bio": "Passionate mathematics teacher dedicated to making complex concepts accessible to all students. Believes in hands-on learning and real-world applications.",
+    "achievements": [
+      "Teacher of the Year 2023",
+      "Improved class average by 25%",
+      "Developed innovative geometry curriculum",
+      "Mentored 10+ student teachers"
+    ],
+    "education": "M.Ed. Mathematics Education, B.S. Mathematics",
+    "specializations": ["Algebra", "Geometry", "Statistics", "Calculus"],
+    "created_at": "2024-01-15T10:30:00.000Z",
+    "last_updated": "2024-01-15T10:30:00.000Z"
+  },
+  "external_url": "https://teacher-portfolio-dapp.vercel.app",
+  "animation_url": null
+}

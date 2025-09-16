@@ -1,0 +1,29 @@
+{
+  "name": "teacher-portfolio-dapp",
+  "version": "1.0.0",
+  "description": "Teacher Portfolio DApp - NFT showcasing teaching impact and statistics on Aptos blockchain",
+  "scripts": {
+    "compile": "aptos move compile",
+    "test": "aptos move test",
+    "deploy:devnet": "aptos move publish --url https://fullnode.devnet.aptoslabs.com --assume-yes --max-gas 100000",
+    "deploy:testnet": "aptos move publish --url https://fullnode.testnet.aptoslabs.com --assume-yes --max-gas 100000",
+    "deploy:mainnet": "aptos move publish --url https://fullnode.mainnet.aptoslabs.com --assume-yes --max-gas 100000",
+    "create-portfolio": "node scripts/create-portfolio.js",
+    "update-stats": "node scripts/update-stats.js",
+    "view-portfolio": "node scripts/view-portfolio.js"
+  },
+  "keywords": [
+    "aptos",
+    "blockchain",
+    "nft",
+    "education",
+    "teacher",
+    "portfolio",
+    "move"
+  ],
+  "author": "Teacher Portfolio DApp Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@aptos-labs/ts-sdk": "^1.0.0"
+  }
+}
