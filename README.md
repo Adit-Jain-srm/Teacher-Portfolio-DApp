@@ -1,4 +1,21 @@
-# 🎓 Teacher Portfolio DApp
+<div align="center">
+
+# Teacher Portfolio DApp
+
+**Blockchain-Powered Teacher Achievement Showcase**
+
+[![Move](https://img.shields.io/badge/Move-Aptos-4CA77B?logo=aptos)](https://aptos.dev/)
+[![React](https://img.shields.io/badge/React-18-61DAFB?logo=react)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)](https://www.typescriptlang.org/)
+[![Web3](https://img.shields.io/badge/Web3-DApp-F16822)](https://aptos.dev/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Last Commit](https://img.shields.io/github/last-commit/Adit-Jain-srm/Teacher-Portfolio-DApp)](https://github.com/Adit-Jain-srm/Teacher-Portfolio-DApp)
+
+*Decentralized portfolio platform for educators to showcase achievements as NFTs on Aptos blockchain.*
+
+</div>
+
+---
 
 A decentralized application on the Aptos blockchain that allows teachers to create, manage, and showcase NFT portfolios highlighting their teaching impact and statistics.
 
